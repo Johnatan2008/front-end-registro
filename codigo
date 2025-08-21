@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaTech 2025</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f0f8ff; color: #333; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { background: #0066cc; color: white; text-align: center; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        h1 { margin-bottom: 10px; }
+        section { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { color: #0066cc; margin-bottom: 15px; text-align: center; }
+        .palestrantes { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 15px 0; }
+        .palestrante { background: #e6f2ff; padding: 15px; border-radius: 8px; width: 45%; text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #0066cc; color: white; border: none; padding: 12px; border-radius: 5px; width: 100%; cursor: pointer; }
+        button:hover { background: #0055aa; }
+        footer { text-align: center; margin-top: 30px; color: #666; }
+        @media (max-width: 600px) {
+            .palestrante { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>InovaTech 2025</h1>
+        <p>25 a 27 de Setembro - Centro de Convenções</p>
+    </header>
+    
+    <section>
+        <h2>Sobre o Evento</h2>
+        <p>O InovaTech 2025 é um evento de tecnologia com foco em inovação e futuro. Participe de palestras e workshops com profissionais da área.</p>
+    </section>
+    
+    <section>
+        <h2>Palestrantes</h2>
+        <div class="palestrantes">
+            <div class="palestrante">
+                <h3>Ana Silva</h3>
+                <p>Especialista em IA</p>
+            </div>
+            <div class="palestrante">
+                <h3>Carlos Souza</h3>
+                <p>Desenvolvedor Web</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Programação</h2>
+        <p><strong>Dia 1:</strong> Abertura (9h), Palestra: O Futuro da IA (10h)</p>
+        <p><strong>Dia 2:</strong> Palestra: IoT na Prática (9h), Workshop: Cloud Computing (14h)</p>
+    </section>
+    
+    <section>
+        <h2>Inscrição</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo de ingresso:</label>
+                <select id="tipo">
+                    <option value="estudante">Estudante</option>
+                    <option value="profissional">Profissional</option>
+                </select>
+            </div>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>InovaTech 2025 - Contato: contato@inovatech.com</p>
+    </footer>
+</body>
+</html>
